@@ -39,7 +39,7 @@ const questions = [
   },
   {
     type: "input",
-    name: "instalation",
+    name: "installation",
     message: "how did you install your project?",
   },
   {
