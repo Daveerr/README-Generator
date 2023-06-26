@@ -3,6 +3,7 @@ const { default: inquirer } = require("inquirer");
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs");
+const generateMarkdown = require("./generateMarkdown");
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -41,13 +42,46 @@ const questions = [
     name: "instalation",
     message: "how did you install your project?",
   },
+  {
+    type: "input",
+    name: "test",
+    message: "what testing has been done on the project?",
+  },
+  {
+    type: "input",
+    name: "contributions",
+    message: "project contributors if any?",
+  },
+  {
+    type: "list",
+    name: "license",
+    message: "choose license for repo",
+    choices: ["MIT", "GPL v3", "APACHE 2.0", "BSD 3-Clause", "NONE"],
+  },
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+  fs.writeFile(fileName, data, (err) => {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    console.log(' File name "${filename}" has been succesfully done');
+  });
+}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init(generateMarkdown) {
+  const data = {
+    title: "my project",
+    license: "MIR",
+    description: "sample project",
+  };
+}
+const markdown = generateMarkdown(data);
+console.log(markdown);
+console.log("initalization complete");
 
 // Function call to initialize app
 init();
