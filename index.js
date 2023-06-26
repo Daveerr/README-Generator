@@ -1,11 +1,11 @@
-const { default: inquirer } = require("inquirer");
+//const { default: inquirer } = require("inquirer");
 
-// TODO: Include packages needed for this application
+//packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs");
 const generateMarkdown = require("./generateMarkdown");
 
-// TODO: Create an array of questions for user input
+// questions for user input
 const questions = [
   {
     type: "input",
@@ -60,7 +60,7 @@ const questions = [
   },
 ];
 
-// TODO: Create a function to write README file
+// function to write README file
 function writeToFile(fileName, data) {
   fs.writeFile(fileName, data, (err) => {
     if (err) {
@@ -71,7 +71,7 @@ function writeToFile(fileName, data) {
   });
 }
 
-// TODO: Create a function to initialize app
+// function to initialize app
 function init(generateMarkdown) {
   inquirer.prompt(questions).then((data) => {
     const markdown = generateMarkdown(data);
