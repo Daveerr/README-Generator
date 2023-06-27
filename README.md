@@ -1,17 +1,29 @@
-# readme generator
+# README Generator
 
-## Description
 
-## license
 
-## Installation
+  ## Description
+  This README generator uses inquirer package so that needs to be installed for it to generate the README
 
-## Usage
+  ## license
+  MIT
 
-## Contributing
+  ## Installation
+  Using node index.js
 
-## Tests
+  ## Usage
+  Go to command line and type node index.js and answer prompts for README
 
-## Name
+  ## Contributing
+  undefined
 
-## Github
+  ## Tests
+  undefined
+
+  ## Name
+  David Rodriguez
+
+  ## Github
+  Daveerr
+ 
+
