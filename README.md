@@ -1,23 +1,17 @@
-# Readme-generator
-  ## Description
-  This project generates a readme based on prompts answers
+# readme generator
 
-  ## license
-  NONE
+## Description
 
-  ## Installation
-  using the inquirer package
+## license
 
-  ## Usage
-  answer prompts to create readme file
+## Installation
 
-  ## Contributing
-  undefined
+## Usage
 
-  ## Tests
-  undefined
+## Contributing
 
-  ## Name
-  david
- 
+## Tests
 
+## Name
+
+## Github
